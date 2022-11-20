@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    
+    <div class="card-one">
+        <h1 style="text-align: center;font-size: 40px; ">Welcome to Unbeatable TicTacToe !</h1>
+        <p style="font-size:22px; margin-top: 5px;">You will be playing against an AI which uses the Alpha Beta pruning search algorithm.
+             The player will never be able to win, he will only be able to draw the game.
+            If you want to skip the tutorial and jump to the game, press "Skip".If you wanna go through the tutorial press "Next".
+            </p>
+        <img class="tictactoeimg" src="tictactoeimage.png" alt="">
+        <button id="skip-tutorial" onclick="skipTutorial()" class="skip-btn">Skip</button>
+        <button id="next-page-btn1" onclick="nextPageOne()" class="next-btn">Next</button>
+
+    </div>
+
+    <div class="card-two">
+        <h1 style="text-align: center; ">How it Works</h1>
+        <p style="font-size:25px; margin-top: 5px;">The AI makes the first move in our implementation , hence the min
+         will try to minimise the chances of the player winning. The player will lose if he doesn't make optimal moves on his part
+        . If the player plays optimally he can draw the game, otherwise the minimax algorithm will always manage to win.
+    To optimise the time complexity of the minimax algorithm , we use alpha beta pruning which is basically a modified version
+of minimax where we prune out branches which we dont need to visit.</p>
+
+        <button id="next-page-btn2" onclick="nextPageTwo()" class="next-btn">Next</button>
+
+    </div>
+
+    <div class="card-three">
+        <h1 style="text-align: center; ">Efforts By-</h1>
+        <p style="font-size:30px; margin-top: 5px; font-style: italic;">Aditya Bisht <br>
+        Ajeet Kumar Verma<br>
+        Mahi Singhal<br>
+        Monika Raghav<br>
+        K Vamsi Krishna 
+        </p>
+
+        <button id="next-page-btn3"  onclick="nextPageThree()" class="next-btn">Play</button>
+
+    </div>
+
+
+
+
+    <section class="galaxy-header">
+        <div class="galaxy">
+            <div class="stars"></div>
+        </div>
+  	</section>
+  	<script src="minimax.js"></script>
+  	<script src="sketch.js"></script>
+    <script src="cardchange.js"></script>
+</body>
+</html>
